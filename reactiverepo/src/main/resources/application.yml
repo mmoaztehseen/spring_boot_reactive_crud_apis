@@ -1,0 +1,13 @@
+spring:
+  r2dbc:
+    url: r2dbc:mysql://localhost:3306/reactive
+    username: root
+    password: root1234
+  liquibase:
+    url: jdbc:mysql://localhost:3306/reactive
+    user: root
+    password: root1234
+    enabled: true
+    change-log: classpath:changelog/changelog-master.xml
+    parameters:
+      key: LiquibaseWithSpringBoot
